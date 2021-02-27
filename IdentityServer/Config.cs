@@ -15,15 +15,11 @@ namespace IdentityServer
                 new IdentityResources.OpenId()
             };
 
-        public static IEnumerable<ApiResource> Apis =>
-            new List<ApiResource>
-            {
-                    new ApiResource("api1", "My API")
-            };
-
         public static IEnumerable<ApiScope> ApiScopes =>
-            new ApiScope[]
-            { };
+            new List<ApiScope>
+            {
+                    new ApiScope("api1", "My API")
+            };
 
         public static IEnumerable<Client> Clients =>
             new List<Client>
